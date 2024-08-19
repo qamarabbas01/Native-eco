@@ -1,11 +1,8 @@
 import { ScrollView, StatusBar, StyleSheet, Text, View } from 'react-native'
-import React, { useState } from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import MaterialIcons from '@expo/vector-icons/MaterialIcons';
-import Button from '../../components/Button'
 
-export default function Favorite() {
-  const [refresh , setRefresh]= useState(false)
+export default function Notification() {
 
   return (
     <SafeAreaView style={styles.container}>
@@ -16,7 +13,6 @@ export default function Favorite() {
         </View>
          <View>
            <Text style={styles.text}>No Notification Yet!</Text>
-          <Button title={'Refresh'} onPress={()=> setRefresh(true)}/>
         </View>
       </ScrollView>
     </SafeAreaView>

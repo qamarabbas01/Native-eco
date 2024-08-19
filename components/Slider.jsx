@@ -5,7 +5,7 @@ import Octicons from '@expo/vector-icons/Octicons';
 import { router } from 'expo-router';
 
 export default function Slider() {
-  const [activeIndex, setActiveIndex] = useState(0); // Initialize with 0
+  const [activeIndex, setActiveIndex] = useState(0); 
   const flatListRef = useRef();
 
   const sliderImages = [
@@ -20,12 +20,12 @@ export default function Slider() {
     const interval = setInterval(() => {
       if (activeIndex === sliderImages.length - 1) {
         flatListRef.current.scrollToIndex({ animated: true, index: 0 });
-        setActiveIndex(0); // Reset to first index
+        setActiveIndex(0); 
       } else {
         flatListRef.current.scrollToIndex({ animated: true, index: activeIndex + 1 });
-        setActiveIndex(activeIndex + 1); // Increment the index
+        setActiveIndex(activeIndex + 1);
       }
-    }, 3000); // Changed to 3000ms for a better experience
+    }, 3000); 
 
     return () => clearInterval(interval);
   }, [activeIndex]);

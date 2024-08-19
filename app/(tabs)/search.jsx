@@ -1,6 +1,8 @@
 import { StatusBar, StyleSheet, Text, TextInput, View } from 'react-native'
 import React from 'react'
 import { SafeAreaView } from 'react-native-safe-area-context'
+import Input from '../../components/input'
+import Octicons from '@expo/vector-icons/Octicons';
 
 export default function Search() {
   return (
@@ -9,8 +11,16 @@ export default function Search() {
       <View >
         <Text style={{color:'white', fontSize:24, fontWeight:'bold', textAlign:'center'}}>Search</Text>
         <View>
-          <TextInput style={styles.input}/>
-        </View>
+        <Input
+            icon={<Octicons name="search" size={20} color={'black'} />}
+            placeholder="Search"
+            style={styles.input}
+          />       
+           </View>
+      </View>
+
+      <View>
+        <Text style={{color:'white', fontSize:14, marginTop:10, textAlign:'center'}}>No Search Yet</Text>
       </View>
     </SafeAreaView>
   )
@@ -23,13 +33,11 @@ const styles = StyleSheet.create({
     height:"100%"
   },
   input:{
-    padding:20,
-    backgroundColor:'#333',
-    marginTop:10,
-    color:'white',
+    backgroundColor:'white',
+    color:'black',
     paddingHorizontal:10,
     borderRadius:10,
-    fontSize:18,
-    fontWeight:'bold'
-  }
+    fontWeight:'500',
+    fontSize:16,
+  },
 })

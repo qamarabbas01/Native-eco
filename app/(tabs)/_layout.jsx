@@ -2,7 +2,6 @@ import { StyleSheet, View } from "react-native";
 import React from "react";
 import { Tabs } from "expo-router";
 import Ionicons from "@expo/vector-icons/Ionicons";
-import Feather from '@expo/vector-icons/Feather';
 import { BlurView } from 'expo-blur';
 import Octicons from '@expo/vector-icons/Octicons';
 
@@ -11,12 +10,12 @@ export default function TabLayout() {
   return (
     <Tabs
       screenOptions={{
-        tabBarActiveTintColor:styles.icon2,
+        tabBarActiveTintColor:'white',
         tabBarInactiveTintColor: 'black',
         tabBarStyle: {
           backgroundColor: 'transparent', 
           position: 'absolute',
-          borderRadius: 99,
+          borderRadius: 100,
           marginBottom: 20,
           marginHorizontal: 20,
           justifyContent: 'center',
@@ -40,9 +39,7 @@ export default function TabLayout() {
         tabBarLabel: "",
          headerShown: false,
           tabBarIcon: ({ color }) => (
-            <View style={styles.icon}>
-              <Feather name="home" size={25} color={'black'} />
-            </View>
+            <Octicons name="home" size={25} color={color} />
            ),
         }}
       />
@@ -53,7 +50,7 @@ export default function TabLayout() {
           tabBarLabel: "",
           headerShown: false,
           tabBarIcon: ({ color }) => (
-            <Ionicons name="search" size={25} color={color} />
+            <Octicons name="search" size={25} color={color} />
           ),
         }}
       />
@@ -84,23 +81,4 @@ export default function TabLayout() {
   );
 }
 
-const styles = StyleSheet.create({
-  icon: {
-    borderRadius: 99,
-    overflow: 'hidden',
-    backgroundColor: 'rgba(205, 205, 205, 0.5)',
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: 60,
-    height: 60,
-  },
-  icon2: {
-    borderRadius: 99,
-    overflow: 'hidden',
-    backgroundColor: 'white',
-    justifyContent: 'center',
-    alignItems: 'center',
-    width: 60,
-    height: 60,
-  },
-});
+const styles = StyleSheet.create({});

@@ -1,16 +1,16 @@
 import { Dimensions, Image, ScrollView, StatusBar, StyleSheet, Text, View } from 'react-native'
 import Slider from '../../components/Slider'
-import Card from '../../components/Card'
+import Products from '../../components/Products'
 
 export default function Home() {
   return (
     <ScrollView style={styles.container}>
-      <StatusBar barStyle="black-content"  backgroundColor="white" hidden={false} />
+      <StatusBar barStyle="light-content"  backgroundColor="white" hidden={false} />
         <View>
           {/* Slider */}
           <Slider/>
           {/* Card */}
-          <Card/>
+          <Products/>
         </View>
      </ScrollView>
   )

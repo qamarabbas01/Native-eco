@@ -1,12 +1,13 @@
-import {Image, SafeAreaView, StatusBar, StyleSheet, Text, View } from 'react-native'
+import {Image, StatusBar, StyleSheet, Text, View } from 'react-native'
 import { router } from 'expo-router';
 import Button from "../components/Button"
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 
 export default function Welcome() {
   return (
     <SafeAreaView style={styles.container}>
-      <StatusBar barStyle="black-content"  backgroundColor="white" hidden={false} />
+      <StatusBar barStyle="light-content"  backgroundColor="black" hidden={false} />
       <View style={styles.header}>
         <Text style={styles.text}>Puff </Text>
         <Text style={styles.text2}>Boutique</Text>
@@ -37,7 +38,6 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: 'black',
-    paddingTop: 20,
   },
   header: {
     display: 'flex',

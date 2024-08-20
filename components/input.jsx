@@ -10,6 +10,7 @@ const Input = (props) => {
       {props.icon && props.icon}
       <TextInput
         placeholderTextColor={'gray'}
+  
         {...props}
       />
     </View>

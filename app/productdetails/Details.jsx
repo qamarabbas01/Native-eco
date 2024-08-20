@@ -1,30 +1,30 @@
 import { Image, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import MaterialCommunityIcons from '@expo/vector-icons/MaterialCommunityIcons';
 import { router } from 'expo-router'
 import Octicons from '@expo/vector-icons/Octicons';
 
 export default function Details() {
   return (
     <ScrollView style={{paddingTop:30,backgroundColor:'black'}}>
-
-
         <Pressable onPress={()=> router.back('')} style={{paddingTop:20, backgroundColor:'black',marginLeft:2}}>
             <Octicons name="arrow-left" size={30} color="white" />
          </Pressable>
 
-         <View style={styles.text2}>
-            <Text style={{fontSize:20,fontWeight:'700', color:"white",textAlign:'center'}}>Most Popular Item</Text>
-         </View>
-
-
-   <View style={{justifyContent:'center',alignItems:'center'}}>
-   <View style={{display:'flex',flexDirection:'row',gap:12}}>
+        <View>
+        <Text style={{fontSize:20,fontWeight:'700', color:"white",textAlign:'center'}}>Most Popular Item</Text>
+    </View>
+   <View>
+    <View style={{ display:'flex',flexDirection:'row',gap:12 }}>
         <View style={styles.imageContainer}>
-            <Image source={require('../../assets/images/Airpuffer1.jpg')} resizeMode='contain' style={styles.image}/>
+            <Image source={require('../../assets/images/Airpuffer2.png')} resizeMode='contain' style={styles.image}/>
         <View>
             <Text style={{color:"white", fontSize:18, fontWeight:'bold',marginBottom:2}}>Cush Coat</Text>
             <Text style={{color:"gray", fontSize:14}}>Urban Collection</Text>
+            <View style={{ display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
             <Text style={{color:"green", fontWeight:'900', fontSize:20, marginTop:4}}>$325.00</Text>
+            <MaterialCommunityIcons name="cart-plus" size={24} color="red" />
+            </View>
+            
         </View>
         </View>
         <View style={styles.imageContainer}>
@@ -32,7 +32,10 @@ export default function Details() {
         <View>
             <Text style={{color:"white", fontSize:18, fontWeight:'bold',marginBottom:2}}>Air cocoon</Text>
             <Text style={{color:"gray", fontSize:14}}>weekend Collection</Text>
+            <View style={{display:"flex" ,flexDirection:'row', justifyContent:'space-between'}}>
             <Text style={{color:"green", fontWeight:'900', fontSize:20, marginTop:4}}>$450.00</Text>
+            <MaterialCommunityIcons name="cart-plus" size={24} color="red" />
+            </View>
         </View>
         </View>
      </View>
@@ -44,7 +47,10 @@ export default function Details() {
         <View>
             <Text style={{color:"white", fontSize:18, fontWeight:'bold',marginBottom:2}}>luxurious Coat</Text>
             <Text style={{color:"gray", fontSize:14}}>Women Collection</Text>
+            <View style={{ display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
             <Text style={{color:"green", fontWeight:'900', fontSize:20, marginTop:4}}>$300.00</Text>
+            <MaterialCommunityIcons name="cart-plus" size={24} color="red" />
+            </View>
         </View>
         </View>
         <View style={styles.imageContainer}>
@@ -52,8 +58,11 @@ export default function Details() {
         <View>
             <Text style={{color:"white", fontSize:18, fontWeight:'bold',marginBottom:2}}>Air Coat</Text>
             <Text style={{color:"gray", fontSize:14}}>Winter Collection</Text>
-            <Text style={{color:"green", fontWeight:'900', fontSize:20, marginTop:4}}>$400.00</Text>
-        </View>
+            <View style={{ display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+            <Text style={{color:"green", fontWeight:'900', fontSize:20, marginTop:4}}>$350.00</Text>
+            <MaterialCommunityIcons name="cart-plus" size={24} color="red" />
+            </View>
+             </View>
         </View>
      </View>
 
@@ -62,17 +71,23 @@ export default function Details() {
         <View style={styles.imageContainer}>
             <Image source={require('../../assets/images/Airpuffer7.png')} resizeMode='contain' style={styles.image}/>
         <View>
-            <Text style={{color:"white", fontSize:18, fontWeight:'bold',marginBottom:2}}>Puffer</Text>
+            <Text style={{color:"white", fontSize:18, fontWeight:'bold',marginBottom:2}}>Air Puffer Hody</Text>
             <Text style={{color:"gray", fontSize:14}}>Women Collection</Text>
-            <Text style={{color:"green", fontWeight:'900', fontSize:20, marginTop:4}}>$210.00</Text>
-        </View>
+            <View style={{ display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+            <Text style={{color:"green", fontWeight:'900', fontSize:20, marginTop:4}}>$250.00</Text>
+            <MaterialCommunityIcons name="cart-plus" size={24} color="red" />
+            </View>       
+         </View>
         </View>
         <View style={styles.imageContainer}>
           <Image source={require('../../assets/images/Airpufffer8.png')} resizeMode='contain' style={styles.image}/>
         <View>
             <Text style={{color:"white", fontSize:18, fontWeight:'bold',marginBottom:2}}>Puffer Hoddy</Text>
             <Text style={{color:"gray", fontSize:14}}>Men Collection</Text>
-            <Text style={{color:"green", fontWeight:'900', fontSize:20, marginTop:4}}>$225.00</Text>
+            <View style={{ display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+            <Text style={{color:"green", fontWeight:'900', fontSize:20, marginTop:4}}>$200.00</Text>
+            <MaterialCommunityIcons name="cart-plus" size={24} color="red" />
+            </View>
         </View>
         </View>
      </View>
@@ -83,15 +98,21 @@ export default function Details() {
         <View>
             <Text style={{color:"white", fontSize:18, fontWeight:'bold',marginBottom:2}}>Puffer Hoddy</Text>
             <Text style={{color:"gray", fontSize:14}}>Men Collection</Text>
-            <Text style={{color:"green", fontWeight:'900', fontSize:20, marginTop:4}}>$320.00</Text>
-        </View>
+            <View style={{ display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+            <Text style={{color:"green", fontWeight:'900', fontSize:20, marginTop:4}}>$505.00</Text>
+            <MaterialCommunityIcons name="cart-plus" size={24} color="red" />
+            </View>     
+       </View>
         </View>
         <View style={styles.imageContainer}>
           <Image source={require('../../assets/images/puffer3.png')} resizeMode='contain' style={styles.image}/>
         <View>
-            <Text style={{color:"white", fontSize:18, fontWeight:'bold',marginBottom:2}}>Puffer Hoddy</Text>
+            <Text style={{color:"white", fontSize:18, fontWeight:'bold',marginBottom:2}}>Air Puffer Hoddy</Text>
             <Text style={{color:"gray", fontSize:14}}>Men Collection</Text>
-            <Text style={{color:"green", fontWeight:'900', fontSize:20, marginTop:4}}>$255.00</Text>
+            <View style={{ display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+            <Text style={{color:"green", fontWeight:'900', fontSize:20, marginTop:4}}>$350.00</Text>
+            <MaterialCommunityIcons name="cart-plus" size={24} color="red" />
+            </View>
         </View>
         </View>
      </View>
@@ -102,7 +123,10 @@ export default function Details() {
         <View>
             <Text style={{color:"white", fontSize:18, fontWeight:'bold',marginBottom:2}}>Air Puffer</Text>
             <Text style={{color:"gray", fontSize:14}}>Men Collection</Text>
-            <Text style={{color:"green", fontWeight:'900', fontSize:20, marginTop:4}}>$210.00</Text>
+            <View style={{ display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+            <Text style={{color:"green", fontWeight:'900', fontSize:20, marginTop:4}}>$425.00</Text>
+            <MaterialCommunityIcons name="cart-plus" size={24} color="red" />
+            </View>
         </View>
         </View>
         <View style={styles.imageContainer}>
@@ -110,36 +134,17 @@ export default function Details() {
         <View>
             <Text style={{color:"white", fontSize:18, fontWeight:'bold',marginBottom:2}}>Air Puffer</Text>
             <Text style={{color:"gray", fontSize:14}}>Men Collection</Text>
-            <Text style={{color:"green", fontWeight:'900', fontSize:20, marginTop:4}}>$225.00</Text>
-        </View>
-        </View>
-     </View>
-
-     <View style={{display:'flex',flexDirection:'row',gap:12, marginBottom:20}}>
-        <View style={styles.imageContainer}>
-            <Image source={require('../../assets/images/puffer9.png')} resizeMode='contain' style={styles.image}/>
-        <View>
-            <Text style={{color:"white", fontSize:18, fontWeight:'bold',marginBottom:2}}>Air Puffer</Text>
-            <Text style={{color:"gray", fontSize:14}}>Men Collection</Text>
-            <Text style={{color:"green", fontWeight:'900', fontSize:20, marginTop:4}}>$210.00</Text>
-        </View>
-        </View>
-        <View style={styles.imageContainer}>
-          <Image source={require('../../assets/images/hoddy.jpeg')} resizeMode='contain' style={styles.image}/>
-        <View>
-            <Text style={{color:"white", fontSize:18, fontWeight:'bold',marginBottom:2}}>Air Puffer</Text>
-            <Text style={{color:"gray", fontSize:14}}>Men Collection</Text>
-            <Text style={{color:"green", fontWeight:'900', fontSize:20, marginTop:4}}>$25.00</Text>
-        </View>
+            <View style={{ display:'flex', flexDirection:'row', justifyContent:'space-between'}}>
+            <Text style={{color:"green", fontWeight:'900', fontSize:20, marginTop:4}}>$235.00</Text>
+            <MaterialCommunityIcons name="cart-plus" size={24} color="red" />
+            </View>       
+         </View>
         </View>
      </View>
-
-            <View style={styles.text}>
-               <View style={{justifyContent:"center",alignItems:'center',marginBottom:60,marginTop:12 }}>
-                <Text style={{color:'white', fontSize:20, fontWeight:'600'}}>You are all caught up 😃</Text>
-               </View>
-            </View>
-   </View>
+    </View>
+    <View style={styles.text}>
+        <Text style={{fontSize:23 , color:'white', fontWeight:'700',textAlign:'center', padding:12 , marginBottom:60}}> You are all caught Up</Text>
+    </View>
     </ScrollView>
    
   )
@@ -158,13 +163,10 @@ const styles = StyleSheet.create({
         marginBottom:10
     },
     text:{
-      borderTopColor:'white',
+      borderTopColor:'green',
       borderWidth:2,
       width:'100%',
+      marginTop:26
     },
-    text2:{
-        borderBottomColor:'white',
-        borderWidth:1,
-        padding:10,
-    }
+   
 })

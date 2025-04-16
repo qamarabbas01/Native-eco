@@ -1,6 +1,5 @@
 import { Pressable, StyleSheet, Text, TouchableOpacity, View } from 'react-native'
 
-
 export default function Button({title,onPress}) {
   return (
     <TouchableOpacity>

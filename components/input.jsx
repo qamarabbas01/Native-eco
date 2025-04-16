@@ -1,16 +1,11 @@
 import { StyleSheet, Text, TextInput, View } from "react-native";
 
-
-
 const Input = (props) => {
   return (
-    <View
-      style={styles.container}
-    >
+    <View style={styles.container}>
       {props.icon && props.icon}
       <TextInput
         placeholderTextColor={'gray'}
-  
         {...props}
       />
     </View>

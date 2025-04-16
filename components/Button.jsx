@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
   },
   buttonText: {
     color: 'black',
-    fontSize: 20,
+    fontSize: 20, 
     fontWeight: 'bold',
     fontFamily: 'Helvetica',
     textAlign: 'center',
